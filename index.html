@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRIAD検索フォーム</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <img src="header-image.jpg" alt="ヘッダー画像" class="header-image">
+    <h1>TRIAD検索フォーム</h1>
+    <div class="search-form">
+        <input type="text" id="song" placeholder="曲名">
+        <input type="text" id="artist" placeholder="アーティスト名">
+        <button onclick="search('wiki')">ウィキ検索</button>
+        <button onclick="search('google')">横断検索</button>
+        <button onclick="search('youtube')">ユーチューブ検索</button>
+    </div>
+    <div id="history">
+        <h2>検索履歴</h2>
+        <ul id="history-list"></ul>
+        <button onclick="downloadCSV()">CSVダウンロード</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
